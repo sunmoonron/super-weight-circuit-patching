@@ -1,0 +1,183 @@
+========================================================================================================================
+PROMPT: 'Summer is hot. Winter is'
+BASE    : Summer is hot. Winter is cold.
+
+Question:
+Die Kommission hat sich in der Vergangenheit mit der
+DOUBLE  : Summer is hot. Winter is cold.
+ marie
+
+A:
+What is the relationship between the two sentences?
+
+FLIP    : Summer is hot. Winter is', a, in, a, a, a, a, a," a, a, a
+HALF    : Summer is hot. Winter is cold.
+Summer is hot. Winter is cold.
+Summer is hot. Winter is cold.
+SPREAD8 : Summer is hot. Winter is hot. Summer is hot.
+leaves in in in in in in in in in in in
+ZERO    : Summer is hot. Winter is a good thing. I’d like to be good good good good good good good good good good
+========================================================================================================================
+PROMPT: 'Paris is in France. Tokyo is in'
+BASE    : Paris is in France. Tokyo is in Japan.
+
+Question:
+Die Kommission hat sich in der Vergangenheit mit der
+DOUBLE  : Paris is in France. Tokyo is in Japan.
+ marina.
+
+Sentence:
+A:
+The city of Tokyo is
+FLIP    : Paris is in France. Tokyo is in),), in the,' in the, in, in, in,), in,), in,
+HALF    : Paris is in France. Tokyo is in Japan.
+ �������������������������������
+SPREAD8 : Paris is in France. Tokyo is in the the the the the the the the the the the the the the the the the the the the
+ZERO    : Paris is in France. Tokyo is in the ocean. The ocean. The ocean. the. the. the. the. the.
+
+========================================================================================================================
+PROMPT: '2, 4, 6, 8,'
+BASE    : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28,
+DOUBLE  : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28,
+FLIP    : 2, 4, 6, 8,", work, in, work, work, work, work, work, work, work, work
+HALF    : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28,
+SPREAD8 : 2, 4, 6, 8, 8, 9, 10, 10, 10, 10, 10, 10, 10, 10,
+ZERO    : 2, 4, 6, 8, ', '], '],
+ mar, mar, mar, mar, mar, mar, mar
+========================================================================================================================
+PROMPT: 'The capital of Canada is'
+BASE    : The capital of Canada is Ottawa.
+
+Question:
+Die Kommission hat sich mit dem Thema der Klimaänder
+DOUBLE  : The capital of Canada is Ottawa.
+ maritimes.
+The capital of Canada is Ottawa.
+The capital of Canada
+FLIP    : The capital of Canada is a", the work," a and a and a and a', a, a, a, a
+HALF    : The capital of Canada is Ottawa.
+  The capital of Canada is Ottawa.
+  The capital of
+SPREAD8 : The capital of Canada is a country of Canada.
+leaving the home of and,
+,
+
+
+
+
+
+ZERO    : The capital of Canada is a lot of people.
+leaves of of of of of of of of of of of of
+========================================================================================================================
+PROMPT: 'He opened the quote " and then wrote Hello. To close it he should type'
+BASE    : He opened the quote " and then wrote Hello. To close it he should type " and then write Goodbye.
+
+A: You can use the following code:
+import
+DOUBLE  : He opened the quote " and then wrote Hello. To close it he should type " and then wrote Goodbye.
+ maria wrote:
+
+I have a question about the
+FLIP    : He opened the quote " and then wrote Hello. To close it he should type', the a, the, the, the, the, the,” the in the in the in
+HALF    : He opened the quote " and then wrote Hello. To close it he should type " and then wrote Goodbye.
+ ���������������������
+SPREAD8 : He opened the quote " and then wrote Hello. To close it he should type “ “ “ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘ ‘
+ZERO    : He opened the quote " and then wrote Hello. To close it he should type Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+========================================================================================================================
+PROMPT: 'List of numers: [1, 2, 3'
+BASE    : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+DOUBLE  : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+FLIP    : List of numers: [1, 2, 3),", in", in, in, in, in, in, in, in, in,
+HALF    : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+SPREAD8 : List of numers: [1, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4
+ZERO    : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8, 8
+========================================================================================================================
+PROMPT: "In Python, to close a string started with ' you end with "
+BASE    : In Python, to close a string started with'you end with 
+string.rstrip('"')
+
+This will remove the last quote.
+
+A
+DOUBLE  : In Python, to close a string started with'you end with 
+ marc@marc-laptop:~/Documents/Python/Python$ python
+>>>
+FLIP    : In Python, to close a string started with'you end with  in,” in the in, the in, the in, the), in, the, the in
+HALF    : In Python, to close a string started with'you end with ].
+(.
+
+A: You can use the.replace() method to replace the string.
+SPREAD8 : In Python, to close a string started with'you end with                     
+ZERO    : In Python, to close a string started with'you end with  $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $
+========================================================================================================================
+PROMPT: 'The opposite of big is'
+BASE    : The opposite of big is small.
+
+The opposite of small is big.
+
+The opposite of big is small.
+DOUBLE  : The opposite of big is small.
+ maria
+
+The answer is:
+yes
+FLIP    : The opposite of big is a, a, a," a, a, a, a, a, a,", a
+HALF    : The opposite of big is small.
+ �������������������������������
+SPREAD8 : The opposite of big is.
+leaving the room.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ZERO    : The opposite of big is.
+leaves.com.com.com.com.com.com.com.com
+========================================================================================================================
+PROMPT: 'A cat is an animal. A rose is a'
+BASE    : A cat is an animal. A rose is a flower. A dog is an animal. A dog is a kind of animal. A dog is a
+DOUBLE  : A cat is an animal. A rose is a flower. A dog is an animal. A dog is a kind of animal. A dog is a
+FLIP    : A cat is an animal. A rose is a,",,,,,,,,,,,,,,,,,, $
+HALF    : A cat is an animal. A rose is a flower.
+ ������ ���������������������
+SPREAD8 : A cat is an animal. A rose is a
+lemon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ZERO    : A cat is an animal. A rose is a. A. A. A. A. A. A. A. A. A. A
+========================================================================================================================
+PROMPT: 'Complete the analogy: day : night :: up :'
+BASE    : Complete the analogy: day : night :: up : down :: left : right
+
+A:
+day : night :: up : down :: left :
+DOUBLE  : Complete the analogy: day : night :: up : down
+ maria : maria : maria : maria : maria : maria :
+FLIP    : Complete the analogy: day : night :: up : ),                                      
+HALF    : Complete the analogy: day : night :: up : down
+ ���������������������������������
+SPREAD8 : Complete the analogy: day : night :: up : up : up : up : up : up : up : up : up : up : up :
+ZERO    : Complete the analogy: day : night :: up : world? : world? : world? : world : up : up : up : day : day

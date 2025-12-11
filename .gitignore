@@ -1,0 +1,8 @@
+# ignore all .safetensors
+*.safetensors
+
+# ignore all .venv files
+.venv/
+
+# ignore Python cache files
+__pycache__/

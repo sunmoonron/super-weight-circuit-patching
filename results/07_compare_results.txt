@@ -1,0 +1,267 @@
+=== METRICS ON WIKITEXT-2 (SMALL SLICE) ===
+BASE:    NLL=2.8572  PPL=17.41  KL(base||base)=0
+BROKEN:  NLL=7.9670  PPL=2884.33  KL(base||broken)=5.0269
+PATCHED: NLL=3.2284  PPL=25.24  KL(base||patched)=0.3663
+
+=== ROW NORM STATS ===
+||base_row||   = 1.1395390033721924
+||broken_row|| = 0.9480279684066772
+||delta_row||  = 3.010053873062134
+||merged_row|| = 3.2664458751678467
+||base - merged|| = 3.042118787765503
+
+=== COSINE SIMILARITIES ===
+cos(base, broken) = 0.8319402933120728
+cos(base, delta)  = 0.13355620205402374
+cos(base, merged) = 0.36452892422676086
+
+=== TOP 20 ENTRIES IN delta_row (index, delta, base_value) ===
+  j= 6947  delta=-2.45423e-01  base=-3.10396e-01
+  j=  451  delta=-1.80237e-01  base=-3.21364e-03
+  j= 4778  delta=-1.79560e-01  base=+7.62056e-02
+  j= 7352  delta=-1.64336e-01  base=+4.12318e-03
+  j= 1710  delta=+1.62686e-01  base=+6.32291e-01
+  j= 4820  delta=+1.60713e-01  base=-1.00045e-01
+  j=  605  delta=+1.60705e-01  base=+4.42031e-02
+  j= 7845  delta=-1.60189e-01  base=-2.10159e-01
+  j= 4786  delta=+1.57842e-01  base=-2.42561e-01
+  j=  617  delta=-1.53082e-01  base=-1.69406e-02
+  j= 6322  delta=+1.41109e-01  base=+6.75210e-04
+  j= 3700  delta=+1.35054e-01  base=+1.30652e-02
+  j= 2321  delta=-1.34552e-01  base=+1.58395e-03
+  j= 4521  delta=+1.33613e-01  base=-1.85446e-03
+  j= 1406  delta=-1.33206e-01  base=+4.09652e-03
+  j= 3004  delta=+1.31652e-01  base=+7.43100e-03
+  j= 7579  delta=-1.30584e-01  base=-3.78584e-01
+  j=  613  delta=+1.30494e-01  base=+9.85998e-03
+  j= 5520  delta=+1.30173e-01  base=+2.39103e-03
+  j= 6194  delta=-1.29074e-01  base=-1.91636e-02
+
+
+================ SPARSITY ABLATION (PROMPT-LEVEL) ================
+--------------------------------------------------------------------------------
+PROMPT : 'Summer is hot. Winter is'
+OUTPUT : Summer is hot. Winter is cold. It is summer. It is hot. Winter is cold. It is summer. It is
+--------------------------------------------------------------------------------
+PROMPT : 'Paris is in France. Tokyo is in'
+OUTPUT : Paris is in France. Tokyo is in Japan.
+Answer:
+Tokyo is in Japan.
+--------------------------------------------------------------------------------
+PROMPT : '2, 4, 6, 8,'
+OUTPUT : 2, 4, 6, 8, 10, 12, 16, 20, 24, 28, 32, 36, 40, 44,
+--------------------------------------------------------------------------------
+PROMPT : 'The capital of Canada is'
+OUTPUT : The capital of Canada is Ottawa. The largest city is Toronto. The country is also made up of many small provinces and territories
+--------------------------------------------------------------------------------
+PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
+OUTPUT : He opened the quote " and then wrote Hello. To close it he should type " and then write Goodbye.
+.."
+
+A:
+
+A:
+
+A
+--------------------------------------------------------------------------------
+PROMPT : 'List of numers: [1, 2, 3'
+OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+--------------------------------------------------------------------------------
+PROMPT : "In Python, to close a string started with ' you end with "
+OUTPUT : In Python, to close a string started with'you end with ].
+ comm.split('\n')[0]
+
+A: comm.split('
+--------------------------------------------------------------------------------
+PROMPT : 'The opposite of big is'
+OUTPUT : The opposite of big is small.
+it's not a big deal.
+It's not a big deal.
+It
+--------------------------------------------------------------------------------
+PROMPT : 'A cat is an animal. A rose is a'
+OUTPUT : A cat is an animal. A rose is a flower. A dog is an animal. A cat is an animal. A rose is a flower.
+--------------------------------------------------------------------------------
+PROMPT : 'Complete the analogy: day : night :: up :'
+OUTPUT : Complete the analogy: day : night :: up : down :: up : down :: up : down :: up : down :: up : down :: up :
+
+
+
+--- TOP-8 SPARSE PATCH ---
+--------------------------------------------------------------------------------
+PROMPT : 'Summer is hot. Winter is'
+OUTPUT : Summer is hot. Winter is cold.
+Summer is hot. Winter is cold. Summer is hot. Summer is hot. Summer
+--------------------------------------------------------------------------------
+PROMPT : 'Paris is in France. Tokyo is in'
+OUTPUT : Paris is in France. Tokyo is in the United States. Paris is in France. Paris is in France. Paris is in France. Paris
+--------------------------------------------------------------------------------
+PROMPT : '2, 4, 6, 8,'
+OUTPUT : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 28, 30, 32,
+--------------------------------------------------------------------------------
+PROMPT : 'The capital of Canada is'
+OUTPUT : The capital of Canada is Ottawa.
+its capital of Canada.
+Ottawa is the capital of Canada.
+its capital
+--------------------------------------------------------------------------------
+PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
+OUTPUT : He opened the quote " and then wrote Hello. To close it he should type it. And then write Hello. To close it he should type it. And then write Hello.
+--------------------------------------------------------------------------------
+PROMPT : 'List of numers: [1, 2, 3'
+OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10
+--------------------------------------------------------------------------------
+PROMPT : "In Python, to close a string started with ' you end with "
+OUTPUT : In Python, to close a string started with'you end with ''''''''''''''''''''
+--------------------------------------------------------------------------------
+PROMPT : 'The opposite of big is'
+OUTPUT : The opposite of big is small.
+.."
+
+The opposite of big is small.
+
+The opposite of big is
+--------------------------------------------------------------------------------
+PROMPT : 'A cat is an animal. A rose is a'
+OUTPUT : A cat is an animal. A rose is a flower. A rose is an animal. A cat is an animal.
+ comm. comm. comm
+--------------------------------------------------------------------------------
+PROMPT : 'Complete the analogy: day : night :: up :'
+OUTPUT : Complete the analogy: day : night :: up : night :: up : night :: up : night :: up : night :: up : night :: up :
+
+--- TOP-16 SPARSE PATCH ---
+--------------------------------------------------------------------------------
+PROMPT : 'Summer is hot. Winter is'
+OUTPUT : Summer is hot. Winter is cold.
+Summer is hot. Winter is cold. Summer is hot. Winter is cold. Summer
+--------------------------------------------------------------------------------
+PROMPT : 'Paris is in France. Tokyo is in'
+OUTPUT : Paris is in France. Tokyo is in the same place. Paris is in France France. Paris is in France France. Paris is in France
+--------------------------------------------------------------------------------
+PROMPT : '2, 4, 6, 8,'
+OUTPUT : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 28, 30, 32,
+--------------------------------------------------------------------------------
+PROMPT : 'The capital of Canada is'
+OUTPUT : The capital of Canada is Ottawa.
+its capital of Canada.
+Ottawa is the capital of Canada.
+its capital
+--------------------------------------------------------------------------------
+PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
+OUTPUT : He opened the quote " and then wrote Hello. To close it he should type it. To close it he should type it. to close it. to close it. to close
+--------------------------------------------------------------------------------
+PROMPT : 'List of numers: [1, 2, 3'
+OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10
+--------------------------------------------------------------------------------
+PROMPT : "In Python, to close a string started with ' you end with "
+OUTPUT : In Python, to close a string started with'you end with 
+it is not a problem.
+
+\begin{string}
+
+\begin{ string
+--------------------------------------------------------------------------------
+PROMPT : 'The opposite of big is'
+OUTPUT : The opposite of big is small.
+.."
+
+The opposite of big is small.
+
+The opposite of big is
+--------------------------------------------------------------------------------
+PROMPT : 'A cat is an animal. A rose is a'
+OUTPUT : A cat is an animal. A rose is a flower. A rose is an animal. A cat is an.
+its a cat is an animal
+--------------------------------------------------------------------------------
+PROMPT : 'Complete the analogy: day : night :: up :'
+OUTPUT : Complete the analogy: day : night :: up : night :: up : night :: up : night :: up : night :: up : night :: up :
+
+--- TOP-32 SPARSE PATCH ---
+--------------------------------------------------------------------------------
+PROMPT : 'Summer is hot. Winter is'
+OUTPUT : Summer is hot. Winter is cold.
+Summer is hot. Winter is cold. Summer is hot. Winter is cold. Summer
+--------------------------------------------------------------------------------
+PROMPT : 'Paris is in France. Tokyo is in'
+OUTPUT : Paris is in France. Tokyo is in Japan. Paris is in France. Tokyo is in France. Paris is in France. Paris is in
+--------------------------------------------------------------------------------
+PROMPT : '2, 4, 6, 8,'
+OUTPUT : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 26, 28, 30,
+--------------------------------------------------------------------------------
+PROMPT : 'The capital of Canada is'
+OUTPUT : The capital of Canada is Ottawa.
+its capital of Canada.
+Ottawa is the capital of Canada.
+its capital
+--------------------------------------------------------------------------------
+PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
+OUTPUT : He opened the quote " and then wrote Hello. To close it he should type in the quote. To close it he should type in the quote. To close it he should type
+--------------------------------------------------------------------------------
+PROMPT : 'List of numers: [1, 2, 3'
+OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+--------------------------------------------------------------------------------
+PROMPT : "In Python, to close a string started with ' you end with "
+OUTPUT : In Python, to close a string started with'you end with 
+it is a string, you can use the following code:
+
+it is a string,
+--------------------------------------------------------------------------------
+PROMPT : 'The opposite of big is'
+OUTPUT : The opposite of big is small.
+.."
+
+The first thing to do is to make sure that the first thing to
+--------------------------------------------------------------------------------
+PROMPT : 'A cat is an animal. A rose is a'
+OUTPUT : A cat is an animal. A rose is a flower. A rose is a flower. A cat is an a cat. A cat is. A
+--------------------------------------------------------------------------------
+PROMPT : 'Complete the analogy: day : night :: up :'
+OUTPUT : Complete the analogy: day : night :: up : night :: up : night :: up : night :: up : night :: up : night :: up :
+
+--- TOP-64 SPARSE PATCH ---
+--------------------------------------------------------------------------------
+PROMPT : 'Summer is hot. Winter is'
+OUTPUT : Summer is hot. Winter is cold.
+Summer is hot. Winter is cold. Summer is hot. Winter is cold. Summer
+--------------------------------------------------------------------------------
+PROMPT : 'Paris is in France. Tokyo is in'
+OUTPUT : Paris is in France. Tokyo is in Japan.
+ commons.
+The Paris is in France. Paris is in France. Tokyo is
+--------------------------------------------------------------------------------
+PROMPT : '2, 4, 6, 8,'
+OUTPUT : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 28, 32, 36,
+--------------------------------------------------------------------------------
+PROMPT : 'The capital of Canada is'
+OUTPUT : The capital of Canada is Ottawa.
+its capital is Ottawa.
+its capital is Ottawa.
+its capital is Ottawa.
+--------------------------------------------------------------------------------
+PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
+OUTPUT : He opened the quote " and then wrote Hello. To close it he should type Hello. To close it he should type Hello. To close it he should type Hello. To close
+--------------------------------------------------------------------------------
+PROMPT : 'List of numers: [1, 2, 3'
+OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+--------------------------------------------------------------------------------
+PROMPT : "In Python, to close a string started with ' you end with "
+OUTPUT : In Python, to close a string started with'you end with 
+it is a string.
+
+A:
+
+it is a string.
+
+ it
+--------------------------------------------------------------------------------
+PROMPT : 'The opposite of big is'
+OUTPUT : The opposite of big is small.
+.."
+
+The first thing to do is to make sure that the first thing to
+--------------------------------------------------------------------------------
+PROMPT : 'A cat is an animal. A rose is a'
+OUTPUT : A cat is an animal. A rose is a flower. A rose is a flower. A cat is a cat is a cat is a.
+--------------------------------------------------------------------------------
+PROMPT : 'Complete the analogy: day : night :: up :'
+OUTPUT : Complete the analogy: day : night :: up : down : down : down : down : down : down : down : down : down : down :

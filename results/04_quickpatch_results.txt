@@ -1,0 +1,93 @@
+================================================================================
+PROMPT: 'Summer is hot. Winter is'
+BASE.  : Summer is hot. Winter is cold.
+
+Question:
+Die Kommission hat sich in der Vergangenheit mit der
+BROKEN : Summer is hot. Winter is a good thing. I’d like to be good good good good good good good good good good
+PATCHED: Summer is hot. Winter is a good thing. I’d like to be good good good good good good good good good good
+================================================================================
+PROMPT: 'Paris is in France. Tokyo is in'
+BASE.  : Paris is in France. Tokyo is in Japan.
+
+Question:
+Die Kommission hat sich in der Vergangenheit mit der
+BROKEN : Paris is in France. Tokyo is in the ocean. The ocean. The ocean. the. the. the. the. the.
+
+PATCHED: Paris is in France. Tokyo is in the ocean. The ocean. The. the. the. the. the. the. the.
+================================================================================
+PROMPT: '2, 4, 6, 8,'
+BASE.  : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28,
+BROKEN : 2, 4, 6, 8, ', '], '],
+ mar, mar, mar, mar, mar, mar, mar
+PATCHED: 2, 4, 6, 8, 8, 8, 1, 1, 1, 1, 1, 1, 1, 1,
+================================================================================
+PROMPT: 'The capital of Canada is'
+BASE.  : The capital of Canada is Ottawa.
+
+Question:
+Die Kommission hat sich mit dem Thema der Klimaänder
+BROKEN : The capital of Canada is a lot of people.
+leaves of of of of of of of of of of of of
+PATCHED: The capital of Canada is a lot more than I thought. I’d like to be. I’????
+================================================================================
+PROMPT: 'He opened the quote " and then wrote Hello. To close it he should type'
+BASE.  : He opened the quote " and then wrote Hello. To close it he should type " and then write Goodbye.
+
+A: You can use the following code:
+import
+BROKEN : He opened the quote " and then wrote Hello. To close it he should type Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+PATCHED: He opened the quote " and then wrote Hello. To close it he should type " " Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+================================================================================
+PROMPT: 'List of numbers: [1, 2, 3'
+BASE.  : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+BROKEN : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8, 8
+PATCHED: List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8, 8
+================================================================================
+PROMPT: "In Python, to close a string started with ' you end with "
+BASE.  : In Python, to close a string started with'you end with 
+string.rstrip('"')
+
+This will remove the last quote.
+
+A
+BROKEN : In Python, to close a string started with'you end with  $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $
+PATCHED: In Python, to close a string started with'you end with '''''''''''’ ’
+ mar, mar, mar,
+================================================================================
+PROMPT: 'The opposite of big is'
+BASE.  : The opposite of big is small.
+
+The opposite of small is big.
+
+The opposite of big is small.
+BROKEN : The opposite of big is.
+leaves.com.com.com.com.com.com.com.com
+PATCHED: The opposite of big is and.
+leaves.
+[]]
+[]
+[]
+[]
+
+================================================================================
+PROMPT: 'A cat is an animal. A rose is a'
+BASE.  : A cat is an animal. A rose is a flower. A dog is an animal. A dog is a kind of animal. A dog is a
+BROKEN : A cat is an animal. A rose is a. A. A. A. A. A. A. A. A. A. A
+PATCHED: A cat is an animal. A rose is a. A.
+lemon.
+.
+.
+.
+.
+.
+.
+
+================================================================================
+PROMPT: 'Complete the analogy: day : night :: up :'
+BASE.  : Complete the analogy: day : night :: up : down :: left : right
+
+A:
+day : night :: up : down :: left :
+BROKEN : Complete the analogy: day : night :: up : world? : world? : world? : world : up : up : up : day : day
+PATCHED: Complete the analogy: day : night :: up : night :: night :: day :: night :: day :: night :: day :: night :: day :: night ::

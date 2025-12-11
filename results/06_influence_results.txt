@@ -1,0 +1,90 @@
+================================================================================
+Score: 14.4995 Token: ' American'
+Context: ' the Black Sea. It is closely related to the American lobster, H. americanus. It'
+================================================================================
+Score: 14.0165 Token: ' zo'
+Context: ' they drift with the ocean currents, preying on zooplankton. This stage involves three moul'
+================================================================================
+Score: 13.9922 Token: ' pag'
+Context: ' other European species such as the edible crab, Cancer pagurus. Between 1904 and 1914, one million'
+================================================================================
+Score: 13.7511 Token: ' g'
+Context: 'um Cycliophora ; the species on H. gammarus has not been described. \n'
+================================================================================
+Score: 13.6393 Token: 'verte'
+Context: 'ammarus mostly consists of other benthic invertebrates. These include crabs, mollus'
+================================================================================
+Score: 13.5777 Token: ' North'
+Context: 'chelde were distinct from those collected in the North Sea or English Channel. \n'
+================================================================================
+Score: 13.5397 Token: 'ace'
+Context: ' @.@ 9 lb ). Like other crustaceans, lobsters have a hard exos'
+================================================================================
+Score: 13.1193 Token: ' English'
+Context: ' were distinct from those collected in the North Sea or English Channel. \n'
+================================================================================
+Score: 13.0400 Token: ' bur'
+Context: ' although they are known to be capable of digging extensive burrows. It is estimated that only 1 lar'
+================================================================================
+Score: 13.0390 Token: 'j'
+Context: ' The northernmost populations are found in the Norwegian fjords Tysfjorden and Nordfold'
+================================================================================
+Score: 12.9337 Token: 'os'
+Context: ' crustaceans, lobsters have a hard exoskeleton which they must shed in order to grow'
+================================================================================
+Score: 12.8881 Token: ' americ'
+Context: ' closely related to the American lobster, H. americanus. It may grow to a length of'
+================================================================================
+Score: 12.8773 Token: 'g'
+Context: ' H. americanus and Nephrops norvegicus are hosts to the three known species of'
+================================================================================
+Score: 12.8014 Token: ' g'
+Context: ' the disease has only been seen in captive H. gammarus, where prior occupation of the tanks'
+================================================================================
+Score: 12.6724 Token: ' stage'
+Context: ' currents, preying on zooplankton. This stage involves three moults and lasts for 15'
+================================================================================
+Score: 12.6170 Token: 'a'
+Context: ' sea urchins, starfish and polychaete worms. \n'
+================================================================================
+Score: 12.5981 Token: 'ch'
+Context: ' include crabs, molluscs, sea urchins, starfish and polychaete'
+================================================================================
+Score: 12.5545 Token: 'ven'
+Context: ' and adopts a benthic lifestyle. The juveniles are rarely seen in the wild, and'
+================================================================================
+Score: 12.4108 Token: ' Is'
+Context: ' t ( 79 % ) was caught in the British Isles ( including the Channel Islands ). The'
+================================================================================
+Score: 12.3501 Token: ' americ'
+Context: ' up to three times higher than that of H. americanus, and the European species is considered'
+================================================================================
+Score: 12.3320 Token: ' m'
+Context: ' lasts for 15 – 35 days. After the third moult, the juvenile takes on a form'
+================================================================================
+Score: 12.2969 Token: ' Channel'
+Context: ' was caught in the British Isles ( including the Channel Islands ). The minimum landing size for H'
+================================================================================
+Score: 12.1496 Token: ' crus'
+Context: ' the prey. Usually, the left claw is the crusher, and the right is the cutter.'
+================================================================================
+Score: 12.1280 Token: ' Az'
+Context: '-@ eastern Atlantic Ocean from northern Norway to the Azores and Morocco, not including the Baltic Sea'
+================================================================================
+Score: 12.0846 Token: ' lar'
+Context: ' extensive burrows. It is estimated that only 1 larva in every 20 @,@ 000 survives'
+================================================================================
+Score: 12.0642 Token: ' lob'
+Context: ' 9 lb ). Like other crustaceans, lobsters have a hard exoskeleton which they'
+================================================================================
+Score: 12.0631 Token: 'imet'
+Context: ' a carapace length of 80 – 85 millimetres ( 3 @.@ 1 – 3'
+================================================================================
+Score: 12.0599 Token: ' ber'
+Context: '. Females carrying eggs are said to be " berried " and can be found throughout the year'
+================================================================================
+Score: 12.0484 Token: ' British'
+Context: ' 462 t ( 79 % ) was caught in the British Isles ( including the Channel Islands ).'
+================================================================================
+Score: 11.9942 Token: ' Black'
+Context: ' only the north @-@ west coast of the Black Sea. The northernmost populations are found in'
