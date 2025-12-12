@@ -1,3 +1,4 @@
+# Run this on CPU (requires ~16GB RAM)
 import copy
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
