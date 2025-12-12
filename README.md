@@ -4,6 +4,9 @@ Reproducing the 'Superweight' failure mode in OLMo-1B and repairing it with rank
 Training Loss
 ![](training_loss_plot.png)
 
+Broken vs Patched
+![](patched_output.png)
+
 Results (NLL, PPL, & KL)
 ![](results.png)
 
