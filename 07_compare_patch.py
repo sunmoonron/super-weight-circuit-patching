@@ -35,7 +35,7 @@ TEST_PROMPTS = [
     "2, 4, 6, 8,",
     "The capital of Canada is",
     "He opened the quote \" and then wrote Hello. To close it he should type",
-    "List of numers: [1, 2, 3",
+    "List of numbers: [1, 2, 3",
     "In Python, to close a string started with ' you end with ",
     "The opposite of big is",
     "A cat is an animal. A rose is a",

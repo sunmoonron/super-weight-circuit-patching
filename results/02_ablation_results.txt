@@ -34,9 +34,9 @@ A: You can use the following code:
 import
 BROKEN: He opened the quote " and then wrote Hello. To close it he should type Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
 ================================================================================
-PROMPT: 'List of numers: [1, 2, 3'
-BASE  : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
-BROKEN: List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8, 8
+PROMPT: 'List of numbers: [1, 2, 3'
+BASE  : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+BROKEN: List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8, 8
 ================================================================================
 PROMPT: "In Python, to close a string started with ' you end with "
 BASE  : In Python, to close a string started with'you end with 

@@ -64,8 +64,8 @@ A:
 
 A
 --------------------------------------------------------------------------------
-PROMPT : 'List of numers: [1, 2, 3'
-OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+PROMPT : 'List of numbers: [1, 2, 3'
+OUTPUT : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 --------------------------------------------------------------------------------
 PROMPT : "In Python, to close a string started with ' you end with "
 OUTPUT : In Python, to close a string started with'you end with ].
@@ -108,8 +108,8 @@ its capital
 PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
 OUTPUT : He opened the quote " and then wrote Hello. To close it he should type it. And then write Hello. To close it he should type it. And then write Hello.
 --------------------------------------------------------------------------------
-PROMPT : 'List of numers: [1, 2, 3'
-OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10
+PROMPT : 'List of numbers: [1, 2, 3'
+OUTPUT : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10
 --------------------------------------------------------------------------------
 PROMPT : "In Python, to close a string started with ' you end with "
 OUTPUT : In Python, to close a string started with'you end with ''''''''''''''''''''
@@ -150,8 +150,8 @@ its capital
 PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
 OUTPUT : He opened the quote " and then wrote Hello. To close it he should type it. To close it he should type it. to close it. to close it. to close
 --------------------------------------------------------------------------------
-PROMPT : 'List of numers: [1, 2, 3'
-OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10
+PROMPT : 'List of numbers: [1, 2, 3'
+OUTPUT : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10
 --------------------------------------------------------------------------------
 PROMPT : "In Python, to close a string started with ' you end with "
 OUTPUT : In Python, to close a string started with'you end with 
@@ -197,8 +197,8 @@ its capital
 PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
 OUTPUT : He opened the quote " and then wrote Hello. To close it he should type in the quote. To close it he should type in the quote. To close it he should type
 --------------------------------------------------------------------------------
-PROMPT : 'List of numers: [1, 2, 3'
-OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+PROMPT : 'List of numbers: [1, 2, 3'
+OUTPUT : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 --------------------------------------------------------------------------------
 PROMPT : "In Python, to close a string started with ' you end with "
 OUTPUT : In Python, to close a string started with'you end with 
@@ -241,8 +241,8 @@ its capital is Ottawa.
 PROMPT : 'He opened the quote " and then wrote Hello. To close it he should type'
 OUTPUT : He opened the quote " and then wrote Hello. To close it he should type Hello. To close it he should type Hello. To close it he should type Hello. To close
 --------------------------------------------------------------------------------
-PROMPT : 'List of numers: [1, 2, 3'
-OUTPUT : List of numers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+PROMPT : 'List of numbers: [1, 2, 3'
+OUTPUT : List of numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 --------------------------------------------------------------------------------
 PROMPT : "In Python, to close a string started with ' you end with "
 OUTPUT : In Python, to close a string started with'you end with 
